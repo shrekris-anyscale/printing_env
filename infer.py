@@ -19,7 +19,7 @@ class ModelServer:
 
 
     @app.post("/inference")
-    def inference(self, request: Request) -> JSONResponse:
+    async def inference(self, request: Request) -> JSONResponse:
 
         response = {
             "result": "OK"
